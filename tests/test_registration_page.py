@@ -27,7 +27,7 @@ def test_registration_success(driver):
     assert 'https://stellarburgers.nomoreparties.site/login' == driver.current_url and button_text == 'Войти'
 
 
-def test_registration_incorrect_pass_error_registration(self, driver):
+def test_registration_incorrect_pass_error_registration(driver):
     driver.get('https://stellarburgers.nomoreparties.site/register')
 
     driver.find_element(*TestLocators.NAME_INPUT).send_keys('aleksey_maltsev21421')
